@@ -2,7 +2,7 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 
-def daily(data, date, *args):
+def barGraph(data, date, *args):
     list = []
     for i in args:
         list.append(data[i].loc[data.index == f'{date}.2019'].tolist())
